@@ -3,7 +3,7 @@ def oxford_comma(array)
   i = 1
 
   while i < array.size
-    if i == array.size -1
+    if (i == array.size - 1)
       sentence << "and #{array[i]}"
     else
       sentence << ", #{array[i]}"
