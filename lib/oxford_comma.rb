@@ -1,11 +1,16 @@
 def oxford_comma(array)
-  sentence = ""
-  array.each do |word|
-    if word == array.last
-      sentence << "and #{word}"
+  sentence << array.first
+  i = 1
+
+  while i < array.size
+    if i == array.size -1
+      sentence << "and #{array[i]}"
     else
-      sentence << "#{word}, "
+      sentence << ", #{array[i]}"
     end
+    i += 1    
   end
+  
   return sentence
+  
 end
