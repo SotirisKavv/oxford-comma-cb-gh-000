@@ -1,16 +1,17 @@
 def oxford_comma(array)
-  sentence = "#{array.first}"
-  i = 1
-
-  while i < array.size
-    if (i == array.size - 1)
-      sentence << ", and #{array[i]}"
-    else
-      sentence << ", #{array[i]}"
+  if (array.size == 1)
+    return array.first
+  elsif (array.size == 2)
+    return array.join(" and ")
+  else
+    sentence = ""
+    array.each do |word|
+      if (word == array.last)
+        sentence << "and #{word}"
+      else
+        sentence << "#{word}, "
+      end
     end
-    i += 1
+    return sentence
   end
-
-  return sentence
-
 end
