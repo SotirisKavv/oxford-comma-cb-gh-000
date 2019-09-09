@@ -1,5 +1,5 @@
 def oxford_comma(array)
-  sentence << array.first
+  sentence = array.first
   i = 1
 
   while i < array.size
