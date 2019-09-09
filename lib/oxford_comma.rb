@@ -4,7 +4,7 @@ def oxford_comma(array)
 
   while i < array.size
     if (i == array.size - 1)
-      sentence << "and #{array[i]}"
+      sentence << " and #{array[i]}"
     else
       sentence << ", #{array[i]}"
     end
