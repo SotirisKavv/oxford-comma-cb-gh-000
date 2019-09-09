@@ -8,9 +8,9 @@ def oxford_comma(array)
     else
       sentence << ", #{array[i]}"
     end
-    i += 1    
+    i += 1
   end
-  
+
   return sentence
-  
+
 end
